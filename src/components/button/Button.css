@@ -1,0 +1,10 @@
+
+
+button{
+    background-color: lightseagreen;
+    border-color: orangered;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 2%;
+}
