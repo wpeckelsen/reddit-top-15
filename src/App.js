@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import axios from "axios";
+import React, { useState, useEffect } from "react";
+import { NavLink, Route, Switch } from "react-router-dom";
+
+import Home from "./pages/homepage/Home";
+import SubReddit from "./pages/subredditpage/SubReddit";
+import Navigation from "./components/navigation bar/Navigation";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+        <Navigation/>
+
+        <Switch>
+          <Route exact path="/">
+            <div className="flex-container">
+              <Home />
+            </div>
+          </Route>
+
+          <Route exact path="/subreddit/:id">
+            <SubReddit />
+          </Route>
+        </Switch>
+      </>
   );
 }
-
 export default App;

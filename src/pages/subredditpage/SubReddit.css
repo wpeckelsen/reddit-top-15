@@ -1,0 +1,35 @@
+.subredditpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    background-color: black;
+    margin: 1%;
+    padding: 1%;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.subreddititempage {
+    background-color: lightseagreen;
+    border-color: orangered;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 1%;
+    margin-bottom: 1%;
+    width: 700px;
+    height: 500px;
+}
+
+
+.banner{
+    background-color: lightseagreen;
+    border-color: orangered;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 1%;
+}
